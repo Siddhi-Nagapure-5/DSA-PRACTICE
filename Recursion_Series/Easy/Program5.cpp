@@ -1,4 +1,4 @@
-//Program 5 Print series from N to 1 using recursion
+//Program 5 Print series from N to 1 using backtracking
 
 #include<iostream>
 #include<bits/stdc++.h>
@@ -8,10 +8,10 @@ void printReverseSeries(int n)
 {
    if(n==0)
    {
-    return ;
+    return;
    }
    cout<<n<<endl;
-   return printReverseSeries(n-1);
+   printReverseSeries(n-1);
 }
 
 int main()
